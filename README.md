@@ -31,11 +31,15 @@ Dataset includes 100 Bay Area tech companies with information on:
 
 ```
 ├── README.md
-├── analysis.ipynb          # Main analysis notebook
-├── layoffs_data.csv        # Dataset
-├── requirements.txt        # Python dependencies
-├── sql_queries.sql         # Example queries
-└── visualizations/         # Charts and graphs
+├── requirements.txt
+├── .gitignore
+├── data/
+│   └── layoffs_data.csv
+├── notebooks/
+│   └── analysis.ipynb
+├── sql/
+│   └── sql_queries.sql
+└── visualizations/
 ```
 
 ## Analysis Highlights
@@ -94,7 +98,7 @@ pip install -r requirements.txt
 
 Open the Jupyter notebook:
 ```bash
-jupyter notebook analysis.ipynb
+jupyter notebook notebooks/analysis.ipynb
 ```
 
 Or run all cells to regenerate the analysis and visualizations.
